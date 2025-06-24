@@ -38,12 +38,22 @@ body {
     margin-right: auto;
     cursor: pointer;
 }
+.content_split {
+    display: flex;
+    gap: 1rem;
+}
 .content {
     padding: 1rem;
     color: #d7d7d7;
+    width: 70%;
+}
+.content h1,
+.content h2 {
+    color: #deffe2;
 }
 .content p {
     text-align: justify;
+    /* max-width: 70%; */
 }
 .offer {
     background-color: rgba(255, 255, 255, 0.1);
@@ -92,4 +102,10 @@ body {
     font-size: 1.3rem;
     font-weight: bold;
     margin-bottom: 0.1rem;
+}
+.sidebar {
+    width: calc(30% - 1.5rem);
+}
+.sidebar h1 {
+    color: #deffe2;
 }
