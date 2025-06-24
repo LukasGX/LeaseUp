@@ -17,6 +17,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    font-size: 1.2rem;
 }
 .header button {
     background-color: rgba(255, 255, 255, 0.1);
@@ -42,4 +43,38 @@ body {
 }
 .content p {
     text-align: justify;
+}
+.offer {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); */
+    transition: 225ms ease;
+}
+.offer:hover {
+    box-shadow: 0 0 14px rgba(255, 255, 255, 0.7);
+}
+.offer .pictures {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.offer .pictures img {
+    width: 100%;
+    border-radius: 10px;
+}
+.offer .information {
+    width: 90%;
+    margin-left: 1rem;
+}
+.offer .information span {
+    display: block;
+}
+.offer .information span:nth-of-type(1) {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
