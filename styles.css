@@ -11,7 +11,7 @@ body {
     background-color: #414141;
 }
 .header {
-    background: linear-gradient(90deg, #000000, color-mix(in srgb, #2e2e2e 90%, #48ff00) 80%);
+    background: linear-gradient(90deg, #000000, #48ff00 80%);
     color: #FFFFFF;
     padding: 1rem;
     display: flex;
