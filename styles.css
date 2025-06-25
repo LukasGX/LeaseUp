@@ -8,10 +8,10 @@
 }
 body {
     margin: 0;
-    background-color: #2d2f36; /* Darker slate gray */
+    background-color: #414141;
 }
 .header {
-    background: linear-gradient(90deg, #1a1e25, #00bfae); /* Navy to mint gradient */
+    background: linear-gradient(90deg, #000000, color-mix(in srgb, #2e2e2e 90%, #48ff00) 80%);
     color: #FFFFFF;
     padding: 1rem;
     display: flex;
@@ -31,7 +31,7 @@ body {
     transition: 225ms ease;
 }
 .header button:hover {
-    background-color: rgba(0, 191, 174, 0.2); /* Mint hover effect */
+    background-color: rgba(255, 255, 255, 0.2);
 }
 .logo {
     height: 6vh;
@@ -44,15 +44,16 @@ body {
 }
 .content {
     padding: 1rem;
-    color: #dcdfe1; /* Soft light gray text */
+    color: #d7d7d7;
     width: 70%;
 }
 .content h1,
 .content h2 {
-    color: #00bfae; /* Soft teal headings */
+    color: #9afcb4;
 }
 .content p {
     text-align: justify;
+    /* max-width: 70%; */
 }
 .offer {
     background-color: rgba(255, 255, 255, 0.1);
@@ -107,14 +108,14 @@ body {
     padding-top: 5rem;
 }
 .sidebar h1 {
-    color: #00bfae; /* Soft teal headings for sidebar */
+    color: #deffe2;
 }
 .sv {
     position: sticky;
     top: 2rem;
 }
 .sv-top {
-    background-color: color-mix(in srgb, rgba(255, 255, 255, 0.5) 50%, #00bfae);
+    background-color: color-mix(in srgb, rgba(255, 255, 255, 0.5) 50%, #48ff00);
     padding: 1rem;
     border-radius: 10px 10px 0 0;
     margin-top: 1rem;
@@ -141,7 +142,7 @@ body {
     margin-top: 0.6rem;
     width: 100%;
     padding: 0.5rem;
-    background-color: color-mix(in srgb, rgba(255, 255, 255, 0.5) 50%, #00bfae);
+    background-color: color-mix(in srgb, rgba(255, 255, 255, 0.5) 50%, #48ff00);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     color: #000000;
     border: none;
@@ -150,6 +151,6 @@ body {
     transition: 225ms ease;
 }
 .sv-bottom button:hover {
-    background-color: color-mix(in srgb, rgba(255, 255, 255, 0.5) 30%, #00bfae);
-    box-shadow: 0 0 15px #00bfae;
+    background-color: color-mix(in srgb, rgba(255, 255, 255, 0.5) 30%, #48ff00);
+    box-shadow: 0 0 15px #48ff00;
 }
