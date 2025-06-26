@@ -6,6 +6,7 @@
     --primary-color: #06923E;
     --secondary-color: #212121;
     --tertiary-color: #D3ECCD;
+    --quaternary-color: #dedede;
 }
 * {
     box-sizing: border-box;
@@ -49,7 +50,7 @@ body {
 }
 .content {
     padding: 1rem;
-    color: var(--tertiary-color);
+    color: var(--quaternary-color);
     width: 70%;
 }
 .content h1,
