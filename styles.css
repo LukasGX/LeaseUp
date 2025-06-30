@@ -2,16 +2,22 @@
     font-family: 'Parkisans';
     src: url('font/Parkinsans-Regular.ttf');
 }
+:root {
+    --primary-color: #06923E;
+    --secondary-color: #212121;
+    --tertiary-color: #D3ECCD;
+    --quaternary-color: #dedede;
+}
 * {
     box-sizing: border-box;
     font-family: 'Parkisans', sans-serif;
 }
 body {
     margin: 0;
-    background-color: #414141;
+    background-color: var(--secondary-color);
 }
 .header {
-    background: linear-gradient(90deg, #000000, #000000 30%, color-mix(in srgb, #000000 40%, #48ff00) 100%);
+    background: linear-gradient(90deg, #000000, #000000 30%, color-mix(in srgb, #000000 40%, var(--primary-color)) 100%);
     color: #FFFFFF;
     padding: 1rem;
     display: flex;
@@ -44,7 +50,7 @@ body {
 }
 .content {
     padding: 1rem;
-    color: #d7d7d7;
+    color: var(--quaternary-color);
     width: 70%;
 }
 .content h1,
@@ -53,6 +59,16 @@ body {
 }
 .content p {
     text-align: justify;
+}
+.content-section {
+    height: 100%;
+}
+.section-intro {
+    background-image: url('intro.avif');
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .offer {
     background-color: rgba(255, 255, 255, 0.1);
@@ -92,7 +108,7 @@ body {
     display: block;
     margin-top: 0.6rem;
     padding: 0.5rem;
-    background-color: color-mix(in srgb, rgba(255, 255, 255, 0.5) 50%, #48ff00);
+    background-color: color-mix(in srgb, rgba(255, 255, 255, 0.5) 50%, var(--primary-color));
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     color: #000000;
     border: none;
@@ -108,8 +124,8 @@ body {
     transition: 225ms ease;
 }
 .offer .information button:hover {
-    background-color: color-mix(in srgb, rgba(255, 255, 255, 0.5) 30%, #48ff00);
-    box-shadow: 0 0 15px #48ff00;
+    background-color: color-mix(in srgb, rgba(255, 255, 255, 0.5) 30%, var(--primary-color));
+    box-shadow: 0 0 15px var(--primary-color);
 }
 .faq {
     background-color: rgba(255, 255, 255, 0.1);
@@ -138,7 +154,7 @@ body {
     top: 2rem;
 }
 .sv-top {
-    background-color: color-mix(in srgb, rgba(255, 255, 255, 0.5) 50%, #48ff00);
+    background-color: color-mix(in srgb, rgba(255, 255, 255, 0.5) 50%, var(--primary-color));
     padding: 1rem;
     border-radius: 10px 10px 0 0;
     margin-top: 1rem;
@@ -165,7 +181,7 @@ body {
     margin-top: 0.6rem;
     width: 100%;
     padding: 0.5rem;
-    background-color: color-mix(in srgb, rgba(255, 255, 255, 0.5) 50%, #48ff00);
+    background-color: color-mix(in srgb, rgba(255, 255, 255, 0.5) 50%, var(--primary-color));
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     color: #000000;
     border: none;
@@ -174,8 +190,8 @@ body {
     transition: 225ms ease;
 }
 .sv-bottom button:hover {
-    background-color: color-mix(in srgb, rgba(255, 255, 255, 0.5) 30%, #48ff00);
-    box-shadow: 0 0 15px #48ff00;
+    background-color: color-mix(in srgb, rgba(255, 255, 255, 0.5) 30%, var(--primary-color));
+    box-shadow: 0 0 15px var(--primary-color);
 }
 .sv-bottom input[type=email] {
     width: 100%;
@@ -189,12 +205,13 @@ body {
     transition: 225ms ease;
 }
 .sv-bottom input[type=email]:hover {
-    border: 1px solid #48ff00;
+    border: 1px solid var(--primary-color);
 }
 .sv-bottom input[type=email]:focus {
-    border: 1px solid #48ff00;
+    border: 1px solid var(--primary-color);
     box-shadow: inset 0 0 10px rgba(72, 255, 0, 0.5);
 }
+
 .request_form {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 1rem;
