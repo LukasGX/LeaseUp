@@ -1,3 +1,6 @@
+function request(offer) {
+    window.location.href = `request.html?offer=${encodeURIComponent(offer)}`;
+}
 async function sidebar() {
     const sidebar = document.getElementById('sidebar');
     const sidebarPossibilities = ['survey', 'feedback', 'newsletter', 'contact'];
