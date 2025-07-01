@@ -149,7 +149,7 @@ body {
     box-shadow: 0 0 14px rgba(255, 255, 255, 0.7);
 }
 .offer .pictures {
-    width: 10%;
+    width: 12%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -159,7 +159,7 @@ body {
     border-radius: 10px;
 }
 .offer .information {
-    width: 90%;
+    width: 88%;
     margin-left: 1rem;
     position: relative;
 }
@@ -169,6 +169,7 @@ body {
 .offer .information span:nth-of-type(1) {
     font-size: 1.5rem;
     font-weight: bold;
+    color: var(--primary-color);
 }
 .offer .information button {
     display: block;
