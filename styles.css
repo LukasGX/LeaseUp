@@ -376,4 +376,30 @@ body {
     .mobile-menu {
         width: auto;
     }
+
+    .content-section-content p,
+    .content-section-content li {
+        font-size: 1rem;
+        display: inline!important;
+    }
+
+    .content-section-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .content-section-content h2 {
+        font-size: 1.4rem;
+    }
+
+    .offer {
+        display: block;
+    }
+    .offer .pictures {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .offer .information button {
+        position: inherit;
+        margin-top: 2rem;
+    }
 }
