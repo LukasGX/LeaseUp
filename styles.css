@@ -22,11 +22,22 @@ body {
     padding: 1rem;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     font-size: 1.2rem;
     scroll-snap-align: start;
+    position: relative;
 }
-.header button {
+.logo {
+    height: 6vh;
+    max-width: 60%;
+    cursor: pointer;
+}
+.desktop-menu {
+    display: flex;
+    gap: 1rem;
+}
+.desktop-menu button,
+.mobile-menu button {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 0.5rem 1rem;
     color: inherit;
@@ -34,15 +45,30 @@ body {
     border-radius: 15px;
     cursor: pointer;
     font-size: 1.2rem;
-    margin-left: 1rem;
     transition: 225ms ease;
 }
-.header button:hover {
+.desktop-menu button:hover,
+.mobile-menu button:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
-.logo {
-    height: 6vh;
-    margin-right: auto;
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 1rem;
+    background: rgba(0, 0, 0, 0.95);
+    border-radius: 10px;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    z-index: 100;
+}
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
     cursor: pointer;
 }
 .content_split {
@@ -334,4 +360,20 @@ body {
 .request_form button:hover {
     background-color: color-mix(in srgb, rgba(255, 255, 255, 0.5) 30%, var(--primary-color));
     box-shadow: 0 0 15px var(--primary-color);
+}
+
+
+/* ################################################ MEDIA ################################################ */
+@media (max-width: 767px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .mobile-menu {
+        width: auto;
+    }
 }

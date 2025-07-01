@@ -11,10 +11,27 @@
 <body>
     <div class="header">
         <img src="LeaseUp.png" alt="LeaseUp! Logo" class="logo" onclick="window.location.href = 'index.html'">
-        <button onclick="window.location.href = 'offers.html'">Angebote</button>
-        <button onclick="window.location.href = 'faq.html'">FAQ</button>
-        <button onclick="window.location.href = 'data_protection.html'">Datenschutz</button>
-        <button onclick="window.location.href = 'imprint.html'">Impressum</button>
+
+        <!-- Desktop Buttons -->
+        <div class="desktop-menu">
+            <button onclick="window.location.href = 'offers.html'">Angebote</button>
+            <button onclick="window.location.href = 'faq.html'">FAQ</button>
+            <button onclick="window.location.href = 'data_protection.html'">Datenschutz</button>
+            <button onclick="window.location.href = 'imprint.html'">Impressum</button>
+        </div>
+
+        <!-- Hamburger Icon -->
+        <button class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Mobile Dropdown -->
+        <div class="mobile-menu" id="mobileMenu">
+            <button onclick="window.location.href = 'offers.html'">Angebote</button>
+            <button onclick="window.location.href = 'faq.html'">FAQ</button>
+            <button onclick="window.location.href = 'data_protection.html'">Datenschutz</button>
+            <button onclick="window.location.href = 'imprint.html'">Impressum</button>
+        </div>
     </div>
     <div class="content_split">
         <div class="content">
