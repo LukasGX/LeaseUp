@@ -6,12 +6,12 @@ function showWantedCar() {
     const wantedCar = document.getElementById('car');
     const hiddenCarField = document.getElementById('car-field');
 
-    if (offer == 'audi_a4') {
+    if (offer == '8168638206') {
         wantedCar.innerHTML = `
         <h2>Ihr gewünschtes Fahrzeug</h2>
         <div class="offer">
             <div class="pictures">
-                <img src="offers/audi_a4.png" alt="Audi A4">
+                <img src="offers/8168638206.png" alt="Audi A4">
             </div>
             <div class="information">
                 <span>Audi A4</span>
@@ -22,12 +22,12 @@ function showWantedCar() {
             </div>
         </div>`;
     }
-    else if (offer == 'vw_golf') {
+    else if (offer == '4891509612') {
         wantedCar.innerHTML = `
         <h2>Ihr gewünschtes Fahrzeug</h2>
         <div class="offer">
             <div class="pictures">
-                <img src="offers/vw_golf.png" alt="VW Golf">
+                <img src="offers/4891509612.png" alt="VW Golf">
             </div>
             <div class="information">
                 <span>VW Golf</span>

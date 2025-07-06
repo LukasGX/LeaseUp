@@ -133,20 +133,20 @@ body {
     border-radius: 5px;
 }
 .section-intro {
-    background-image: url('intro.avif');
+    background-image: url('resources/intro.avif');
     /* height: calc(100vh - 6vh - 2rem)!important; */
 }
 .section-how-works {
-    background-image: url('how-works.jpeg');
+    background-image: url('resources/how-works.jpeg');
 }
 .section-benefits {
-    background-image: url('benefits.jpeg');
+    background-image: url('resources/benefits.jpeg');
 }
 .section-how-start {
-    background-image: url('how-start.jpeg');
+    background-image: url('resources/how-start.jpeg');
 }
 .section-for-who {
-    background-image: url('for-who.webp');
+    background-image: url('resources/for-who.webp');
 }
 .content-section-content {
     background-color: rgba(0, 0, 0, 0.2);
