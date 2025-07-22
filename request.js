@@ -11,7 +11,7 @@ function showWantedCar() {
         <h2>Ihr gewünschtes Fahrzeug</h2>
         <div class="offer">
             <div class="pictures">
-                <img src="../offers/8168638206.png" alt="Audi A4">
+                <img src="../offers/8168638206.jpg" alt="Audi A4">
             </div>
             <div class="information">
                 <span>Audi A4</span>
@@ -27,7 +27,7 @@ function showWantedCar() {
         <h2>Ihr gewünschtes Fahrzeug</h2>
         <div class="offer">
             <div class="pictures">
-                <img src="../offers/4891509612.png" alt="VW Golf">
+                <img src="../offers/4891509612.jpg" alt="VW Golf">
             </div>
             <div class="information">
                 <span>VW Golf</span>
