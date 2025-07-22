@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeaseUp!</title>
+
+    <link rel="stylesheet" href="fa/css/all.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="resources/LeaseUp.png" alt="LeaseUp! Logo" class="logo" onclick="window.location.href = 'index.html'">
+
+        <!-- Desktop Buttons -->
+        <div class="desktop-menu">
+            <button onclick="window.location.href = 'sub/offers.html'">Angebote</button>
+            <button onclick="window.location.href = 'sub/faq.html'">FAQ</button>
+            <button onclick="window.location.href = 'sub/data_protection.html'">Datenschutz</button>
+            <button onclick="window.location.href = 'sub/imprint.html'">Impressum</button>
+        </div>
+
+        <!-- Hamburger Icon -->
+        <button class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Mobile Dropdown -->
+        <div class="mobile-menu" id="mobileMenu">
+            <button onclick="window.location.href = 'sub/offers.html'">Angebote</button>
+            <button onclick="window.location.href = 'sub/faq.html'">FAQ</button>
+            <button onclick="window.location.href = 'sub/data_protection.html'">Datenschutz</button>
+            <button onclick="window.location.href = 'sub/imprint.html'">Impressum</button>
+        </div>
+    </div>
+    <div class="content_split">
+        <div class="content">
+            <div class="content-section section-intro">
+                <div class="content-section-content">
+                    <h1>LeaseUp! - Dein flexibler Weg zum Auto</h1>
+                    <p>LeaseUp! bietet dir günstige Leasingoptionen für hochwertige Gebrauchtwagen. Maximiere deine Freiheit und minimiere deine Kosten.</p>
+                </div>
+            </div>
+
+            <div class="content-section section-how-works">
+                <div class="content-section-content">
+                    <h2><i class="fas fa-lightbulb"></i> Wie es funktioniert</h2>
+                    <p>Wir kaufen geprüfte Gebrauchtwagen, bereiten sie auf und bieten sie dir zu günstigen Leasingraten für 24 Monate an. Am Ende entscheidest du, ob du das Auto behältst oder zurückgibst.</p>
+                </div>
+            </div>
+
+            <div class="content-section section-benefits">
+                <div class="content-section-content">
+                    <h2><i class="fas fa-star"></i> Deine Vorteile</h2>
+                    <ul>
+                        <li>Günstige Raten & geprüfte Gebrauchtwagen</li>
+                        <li>Keine langfristige Bindung</li>
+                        <li>Flexibilität bei der Fahrzeugwahl</li>
+                        <li>Transparente Kosten</li>
+                        <li>Nachhaltigkeit durch Gebrauchtwagen</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section section-how-start">
+                <div class="content-section-content">
+                    <h2><i class="fas fa-cogs"></i> Wie du startest</h2>
+                    <p>Wähle dein Wunschauto aus, stelle eine Anfrage und schließe den Vertrag digital ab. Starte flexibel und ohne Papierkram!</p>
+                </div>
+            </div>
+
+            <div class="content-section section-for-who">
+                <div class="content-section-content">
+                    <h2><i class="fas fa-users"></i> Für wen ist LeaseUp?</h2>
+                    <p>LeaseUp! ist ideal für junge Fahrer, Familien oder alle, die ein günstiges, nachhaltiges Auto suchen.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="sidebar" id="sidebar"></div> -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeaseUp!</title>
+
+    <link rel="stylesheet" href="../fa/css/all.css">
+    <link rel="stylesheet" href="../styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <img src="../resources/LeaseUp.png" alt="LeaseUp! Logo" class="logo" onclick="window.location.href = '../index.html'">
+        Unverbindliche Anfrage
+    </div>
+    <div class="content_split">
+        <div class="content">
+            <div>
+                <h1>Unverbindliche Anfrage</h1>
+                <p>Vielen Dank für Ihr Interesse an unseren Fahrzeugen! Bitte füllen Sie das folgende Formular aus, um eine unverbindliche Anfrage zu stellen. Wir werden uns so schnell wie möglich mit Ihnen in Verbindung setzen.</p>
+                <div id="car"></div>
+                <h2>Ihre Anfrage</h2>
+                <div class="request_form">
+                    <form action="../backend/request.php" method="post">
+                        <input type="text" name="name" placeholder="Ihr voller Name" required>
+                        <p class="mb">
+                            Ihr Geschlecht
+                            <select name="gender" required>
+                                <option value="" selected disabled>Bitte angeben</option>
+                                <option value="m">Männlich</option>
+                                <option value="w">Weiblich</option>
+                                <option value="d">Divers</option>
+                                <option value="x">Keine Angabe</option>
+                            </select>
+                        </p>
+                        <input type="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
+                        <input type="tel" name="phone" placeholder="Ihre Telefonnummer">
+                        <input type="hidden" name="car" id="car-field" value="">
+                        <textarea name="message" placeholder="Ihre Nachricht an uns" required></textarea>
+                        <button id="submit_request">Anfrage absenden</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../request.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("select").select2({
+                minimumResultsForSearch: Infinity,
+                width: 'auto'
+            });
+        });
+    </script>
+</body>
+</html>
